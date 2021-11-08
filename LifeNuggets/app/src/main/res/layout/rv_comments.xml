@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="20dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="#FFFF00">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_comment_postId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="postId"
+                android:textSize="16sp"
+                android:fontFamily="@font/bubblegum_sans"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:id="@+id/tv_comment_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:fontFamily="@font/bubblegum_sans"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/tv_comment_postId"
+                app:layout_constraintTop_toBottomOf="@id/tv_comment_postId"
+                android:layout_marginTop="3dp"/>
+
+            <TextView
+                android:id="@+id/tv_comment_body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Body"
+                android:fontFamily="@font/bubblegum_sans"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/tv_comment_name"
+                app:layout_constraintTop_toBottomOf="@id/tv_comment_name"
+                android:layout_marginTop="3dp" />
+
+            <TextView
+                android:id="@+id/tv_comment_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Id"
+                android:fontFamily="@font/bubblegum_sans"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/tv_comment_body"
+                app:layout_constraintTop_toBottomOf="@id/tv_comment_body"
+                android:layout_marginTop="3dp"
+                android:textSize="16sp"/>
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_comment_email"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="email"-->
+<!--                android:textSize="16sp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                android:layout_marginBottom="15dp"-->
+<!--                android:layout_marginEnd="15dp"/>-->
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
